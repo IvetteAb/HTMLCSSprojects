@@ -1,12 +1,9 @@
-survey form
+/* survey form */
 
-'Tastebuds survey'
-
-freecode camp
+/* 'Tastebuds survey' */
 
 
-
-HTML
+/* HTML */
 
 
 <html lang="en">
@@ -16,7 +13,7 @@ HTML
 	<header class="header">
 		
 		<meta charset="UTF-8">
-    	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 		
 		<h1 id="title">Tastebuds survey<span class="cutlery-icon"><i class="fa fa-cutlery" aria-hidden="true"></i></span></h1>
@@ -70,8 +67,8 @@ HTML
 					id="gender" 
 					class="form-box-control"
 					>What is your gender?
-			</label>
-    	<select 
+		</label>
+    		<select 
 					name="gender" 
 					id="dropdown" 
 					class="form-box-control" 
@@ -93,7 +90,7 @@ HTML
 						class="input-checkbox"
 						>Breakfast
     		</label>
-			<label>
+		<label>
       			<input 
 						type="radio" 
 						name="favourite-meal"  
@@ -101,7 +98,7 @@ HTML
 						class="input-checkbox"
 						>Lunch
     		</label>
-			<label>
+		<label>
       			<input 
 						type="radio" 
 						name="favourite-meal"  
@@ -129,7 +126,7 @@ HTML
 						class="input-checkbox"
 						>1 - 2
     		</label>
-			<label>
+		<label>
       			<input 
 						type="radio" 
 						name="eating-out"  
@@ -137,7 +134,7 @@ HTML
 						class="input-checkbox"
 						>3 - 4
     		</label>
-			<label>
+		<label>
       			<input 
 						type="radio" 
 						name="eating-out"  
@@ -147,105 +144,105 @@ HTML
     		</label>
 		</div>
 		
-    <div class="form-group">
+    		<div class="form-group">
 		<p>Which cuisine is your favourite?<span class="clue">(Maximum of 3)</span></p>
-			<label>
-				<input 
+		<label>
+			<input 
 						 type="checkbox" 
 						 name="cusine" 
 						 value="america"
 						 class="input-checkbox"
 						 >American
-			</label>
-			<label>
-				<input 
+		</label>
+		<label>
+			<input 
 						 type="checkbox" 
 						 name="cusine" 
 						 value="british"
 						 class="input-checkbox"
 						 >British
-			</label>
-			<label>
-				<input 
+		</label>
+		<label>
+			<input 
 						 type="checkbox" 
 						 name="cusine" 
 						 value="chinese"
 						 class="input-checkbox"
 						 >Chinese
-			</label>
-			<label>
-				<input 
+		</label>
+		<label>
+			<input 
 						 type="checkbox" 
 						 name="cusine" 
 						 value="korean"
 						 class="input-checkbox"
 						 >Korean
-			</label>
-			<label>
-				<input 
+		</label>
+		<label>
+			<input 
 						 type="checkbox" 
 						 name="cusine" 
 						 value="italian"
 						 class="input-checkbox"
 						 >Italian
-			</label>
-			<label>
-				<input 
+		</label>
+		<label>
+			<input 
 						 type="checkbox" 
 						 name="cusine" 
 						 value="indian"
 						 class="input-checkbox"
 						 >Indian
-			</label>
-			<label>
-				<input 
+		</label>
+		<label>
+			<input 
 						 type="checkbox" 
 						 name="cusine" 
 						 value="french"
 						 class="input-checkbox"
 						 >French
-			</label>
-			<label>
-				<input 
+		</label>
+		<label>
+			<input 
 						 type="checkbox" 
 						 name="cusine" 
 						 value="japanese"
 						 class="input-checkbox"
 						 >Japanese
-			</label>
-			<label>
-				<input 
+		</label>
+		<label>
+			<input 
 						 type="checkbox" 
 						 name="cusine" 
 						 value="thai"
 						 class="input-checkbox"
 						 >Thai
-			</label>
-			<label>
-				<input 
+		</label>
+		<label>
+			<input 
 						 type="checkbox" 
 						 name="cusine" 
 						 value="mexican"
 						 class="input-checkbox"
 						 >Mexican
-			</label>
-			<label>
-				<input 
+		</label>
+		<label>
+			<input 
 						 type="checkbox" 
 						 name="cusine" 
 						 value="other"
 						 class="input-checkbox"
 						 >Other
-			</label>
-			</div>
+		</label>
+		</div>
 		
-			<div class="form-group">
-			<label 
+		<div class="form-group">
+		<label 
 					 for="ice-cream" 
 					 id="ice-cream">
 					 What is your favourite ice-cream flavour?
-			</label>
-    	<select 
+		</label>
+    		<select 
 						name="ice-cream" 
 						id="dropdown" 
 						class="form-box-control" 
@@ -261,7 +258,7 @@ HTML
       		<option value="rocky road">Rocky Road</option>
       		<option value="birthday cake">Birthday cake</option>
       		<option value="other">Other</option>
-    	</select>
+    		</select>
 		</div>
 		
 		<div class="form-group">
@@ -309,7 +306,7 @@ HTML
 
 
 
-CSS
+/* CSS */
 
 
 :root {
@@ -330,22 +327,22 @@ body {
 	font-family: Helvetica, Arial;
 	font-size: 16px;
 	margin: 0;
-	margin: 0 10% 0 10%;		/* for the container size */
+	margin: 0 10% 0 10%;				/* for the container size */
 }
 
-body::before {			/* ::before selector inserts something after the content of each body element*/
+body::before {						/* ::before selector inserts something after the content of each body element*/
 	content: '';
 	position: fixed;
   	top: 0;
   	left: 0;
   	height: 100%;
   	width: 100%;
-  	z-index: -1;	/* shows which elements are closer to the user */
+  	z-index: -1;					/* shows which elements are closer to the user */
   	background-image: linear-gradient(
-      	145deg, 												/* ombre effect of colours */
+      	145deg, 					/* ombre effect of colours */
 		rgba(255,179,51, 0.7),
 		rgba(255,230,204, 0.6)
-    ),		/* a = alpha --> 0 = transparent & 1 = not transparent*/
+    ),							/* a = alpha --> 0 = transparent & 1 = not transparent*/
     url(https://images.unsplash.com/photo-1601326368965-8b8e9c69627c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80);
   	background-size: cover;
   	background-repeat: no-repeat;
@@ -414,7 +411,7 @@ body::before {			/* ::before selector inserts something after the content of eac
 }
 
 h1:hover {
-	font-size: 2.4em;			/* size increases when mouse hovers over */
+	font-size: 2.4em;					/* size increases when mouse hovers over */
 }
 
 #description {
@@ -449,7 +446,7 @@ form {
 	border-radius: 0.3rem;
 }
 
-.form-box-control:focus,	/* :focus selector = used to select the element that is focused on */
+.form-box-control:focus,					/* :focus selector = used to select the element that is focused on */
 .input-textarea:focus {
 	border-color: rgb(141,85,36);
 	border-width: 2px;
@@ -459,7 +456,7 @@ form {
 
 .input-checkbox {
 	display: inline-block;
-	margin-right: 0.5rem;				/* space between checkbox and words */
+	margin-right: 0.5rem;					/* space between checkbox and words */
 }
 
 .form-group {
@@ -482,19 +479,19 @@ span {
 .input-textarea{
 	width: 100%;
 	min-height: 40px;
-	resize: vertical; /* resize property defines if (& how) an element is resizable by the user */
+	resize: vertical; 					/* resize property defines if (& how) an element is resizable by the user */
 }
 
 input,
 button,
 select,
 textarea {
-	margin: 0;			/* ensures the fom boxes are aligned with the words */
+	margin: 0;						/* ensures the fom boxes are aligned with the words */
   	font-size: inherit;
 }
 
 button:hover,
-button:visited {					/* changes occur when the button is clicked on */
+button:visited {						/* changes occur when the button is clicked on */
 	background-color: #000000;
 	color: orange;
 	border-color: black;
