@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+    	<meta charset="UTF-8">
+    	<title>Aretha Franklin's Tribute Page</title>
+    	<link rel="stylesheet" type="text/css" href="/Users/ivette/Library/Mobile Documents/iCloud~com~barebones~bbedit/Documents/Coding projects/Survery form/Survey form project.css"/> <!-- to link css page in the html page -->
+  	</head>
+
+	<div class="container"> 
+
+		<header class="header">
+			
+			<meta charset="UTF-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+			<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+			
+			<h1 id="title">Tastebuds survey<span class="cutlery-icon"><i class="fa fa-cutlery" aria-hidden="true"></i></span></h1>
+			
+			<p id="description">Thank you for completing this form!</p>
+			
+		</header>
+	
+		<form id="survey-form">
+		
+			<div class="form-group">
+				<label for="name" id="name-label">Name</label>
+				<input
+					type="text"
+					name="name"
+					id="name"
+					class="form-box-control"
+					placeholder="Enter your name"
+					required
+				/>
+			</div>
+		
+			<div class="form-group">
+				<label for="email" id="email-label">Email</label>
+				<input
+					type="email"
+					name="email"
+					id="email"
+					class="form-box-control"
+					placeholder="Enter your email"
+					required
+				/>
+			</div>
+			
+			<div class="form-group">
+				<label for="number" id="number-label">Age<span>(optional)</span></label>
+				<input
+					type="number"
+					name="Age"
+					id="number"
+					class="form-box-control"
+					min="9"
+					max="109"
+					placeholder="Age"
+				/>
+			</div>
+				
+			<div class="form-group">
+				<label 
+					for="gender" 
+					id="gender" 
+					class="form-box-control"
+					>What is your gender?
+				</label>
+				<select
+					name="gender" 
+					id="dropdown" 
+					class="form-box-control" 
+					required>
+					<option disabled selected value>Please select</option>
+					<option value="male">Male</option>
+					<option value="female">Female</option>
+					<option value="other">Other</option>
+				</select>
+			</div>
+			
+			<div class="form-group">
+				<p>What is your favourite meal of the day?</p>
+				<label>
+					<input 
+						type="radio" 
+						name="favourite-meal" 
+						value="breakfast" 
+						class="input-checkbox"
+						>Breakfast
+				</label>
+				<label>
+					<input 
+						type="radio" 
+						name="favourite-meal"  
+						value="lunch" 
+						class="input-checkbox"
+						>Lunch
+				</label>
+				<label>
+					<input 
+						type="radio" 
+						name="favourite-meal"  
+						value="dinner" 
+						class="input-checkbox"
+						>Dinner
+				</label>
+			</div>
+			
+			<div class="form-group">
+				<p>How many times do you go out to eat per month?</p>
+				<label>
+					<input 
+						type="radio" 
+						name="eating-out" 
+						value="never" 
+						class="input-checkbox"
+						>Never
+				</label>
+				<label>
+					<input 
+						type="radio" 
+						name="eating-out"  
+						value="1-2" 
+						class="input-checkbox"
+						>1 - 2
+				</label>
+				<label>
+					<input 
+						type="radio" 
+						name="eating-out"  
+						value="3-4" 
+						class="input-checkbox"
+						>3 - 4
+				</label>
+				<label>
+					<input 
+						type="radio" 
+						name="eating-out"  
+						value="5+" 
+						class="input-checkbox"
+						>5 +
+				</label>
+			</div>
+			
+			<div class="form-group">
+			<p>Which cuisine is your favourite?<span class="clue">(Maximum of 3)</span></p>
+				<label>
+					<input 
+						type="checkbox" 
+						name="cusine" 
+						value="america"
+						class="input-checkbox"
+						>American
+				</label>
+				<label>
+					<input 
+						type="checkbox" 
+						name="cusine" 
+						value="british"
+						class="input-checkbox"
+						>British
+				</label>
+				<label>
+					<input 
+						type="checkbox" 
+						name="cusine" 
+						value="chinese"
+						class="input-checkbox"
+						>Chinese
+				</label>
+				<label>
+					<input 
+						type="checkbox" 
+						name="cusine" 
+						value="korean"
+						class="input-checkbox"
+						>Korean
+				</label>
+				<label>
+					<input 
+						type="checkbox" 
+						name="cusine" 
+						value="italian"
+						class="input-checkbox"
+						>Italian
+				</label>
+				<label>
+					<input 
+						type="checkbox" 
+						name="cusine" 
+						value="indian"
+						class="input-checkbox"
+						>Indian
+				</label>
+				<label>
+					<input 
+						type="checkbox" 
+						name="cusine" 
+						value="french"
+						class="input-checkbox"
+						>French
+				</label>
+				<label>
+					<input 
+						type="checkbox" 
+						name="cusine" 
+						value="japanese"
+						class="input-checkbox"
+						>Japanese
+				</label>
+				<label>
+					<input 
+						type="checkbox" 
+						name="cusine" 
+						value="thai"
+						class="input-checkbox"
+						>Thai
+				</label>
+				<label>
+					<input 
+						type="checkbox" 
+						name="cusine" 
+						value="mexican"
+						class="input-checkbox"
+						>Mexican
+				</label>
+				<label>
+					<input 
+						type="checkbox" 
+						name="cusine" 
+						value="other"
+						class="input-checkbox"
+						>Other
+				</label>
+				</div>
+			
+				<div class="form-group">
+				<label 
+					for="ice-cream" 
+					id="ice-cream">
+					What is your favourite ice-cream flavour?
+				</label>
+				<select 
+					name="ice-cream" 
+					id="dropdown" 
+					class="form-box-control" 
+					required>
+					<option disabled selected value>Please select</option>
+					<option value="strawberry">Strawberry</option>
+					<option value="vanilla">Vanilla</option>
+					<option value="Oreo">Oreo</option>
+					<option value="mint chocolate ">Mint chocolate</option>
+					<option value="chocolate">Chocolate</option>
+					<option value="neapolitan">Neapolitan</option>
+					<option value="cookie dough">Cookie dough</option>
+					<option value="rocky road">Rocky Road</option>
+					<option value="birthday cake">Birthday cake</option>
+					<option value="other">Other</option>
+				</select>
+			</div>
+			
+			<div class="form-group">
+				<p>What is your favourite meal?</p>
+				<textarea 
+					id="holiday" 
+					class="input-textarea" 
+					name="dream holiday" 
+					placeholder="Mmmm..."
+					required>
+				</textarea>
+			</div>
+			
+			<div class="form-group">
+				<p>Any additional comments?</p>
+				<textarea 
+					id="comments" 
+					class="input-textarea" 
+					name="comments" 
+					placeholder="..."
+					>
+				</textarea>
+			</div>
+		
+			<div class="form-group">
+				<button 
+					type="submit" 
+					id="submit" 
+					class="submit-button">
+					Submit
+				</button>
+			</div>
+			
+		
+		</form>
+	
+	</div>
+	
+</html>
