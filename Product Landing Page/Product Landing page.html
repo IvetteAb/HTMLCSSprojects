@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AB's Bakery Landing Page</title> <!-- required; shown in page tab or browser's title bar -->
+    <!-- link for icons: -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- links for google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@300&display=swap" rel="stylesheet">
+    <!-- link to css page -->
+    <link rel="stylesheet" type="text/css" href="/Users/ivette/Library/Mobile Documents/iCloud~com~barebones~bbedit/Documents/Coding projects/Product Landing Page/Product Landing page.css"/> <!-- to link css page in the html page -->
+  </head>
+
+
+  <div id="page-wrapper">
+
+  <!-- HEADER ---- HEADER ---- HEADER ---- HEADER ---- HEADER ---- HEADER ---- HEADER ---- HEADER ---- HEADER ---- HEADER ---- HEADER ---- HEADER -->
+    
+    <header id="header">
+      
+      <div class="logo">
+        <img 
+          id="header-img"
+          src="https://cdn4.iconfinder.com/data/icons/ibrandify-basic-essentials-icon-set/512/pen_stroke_sketch_doodle_lineart_18-1024.png"
+          width= 55px
+          height= 55px
+          alt="AB Bakery's logo."
+        />
+      </div>
+      
+      <h1>AB's Bakery</h1>
+
+  
+  <!-- NAVIGATION ---- NAVIGATION ---- NAVIGATION ---- NAVIGATION ---- NAVIGATION ---- NAVIGATION ---- NAVIGATION ---- NAVIGATION ---- NAVIGATION -->
+      
+      <!-- Note: href links to id in each section -->
+      <nav id="nav-bar">
+        <ul>
+          <li><a class="nav-link" href="#products">Products</a></li>
+          <li><a class="nav-link" href="#click-&-collect">Click & Collect</a></li>
+          <li><a class="nav-link" href="#opening-hours">Opening hours</a></li>
+          <li><a class="nav-link" href="#contact-us">Contact us</a></li>
+        </ul>
+      </nav>
+      
+    </header>
+    
+  <!-- VIDEO ---- VIDEO ---- VIDEO ---- VIDEO ---- VIDEO ---- VIDEO ---- VIDEO ---- VIDEO ---- VIDEO ---- VIDEO ---- VIDEO ---- VIDEO ---- VIDEO -->
+
+    <section>
+        <iframe 
+                id="video"
+                width="560" 
+                height="315" 
+                src="https://www.youtube.com/embed/_om7--IxCIY" 
+                title="YouTube video player" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                allowfullscreen
+        ></iframe>   
+    </section>
+
+      
+    <!-- frameborder="0" = no border around the video 
+        width & height are automatically in px -->
+      
+    
+  <!-- PRODUCTS ---- PRODUCTS ---- PRODUCTS ---- PRODUCTS ---- PRODUCTS ---- PRODUCTS ---- PRODUCTS ---- PRODUCTS ---- PRODUCTS ---- PRODUCTS ---->
+    <br>
+    <hr class="solid">  <!-- divider; solid line -->
+    <br>
+    
+    <!-- Note: id links to href in nav bar -->
+    <div id="products">
+      <h2>Products</h2>
+      
+        <section class="food-section">
+          <h4 class="product-description">Bread</h4>
+          <ul>
+            <li>White bread (loaf) - <strong>£2</strong></li>
+            <li>Brown bread (loaf) - <strong>£2</strong></li>
+            <li>Whole wheat (loaf) - <strong>£2</strong></li>
+            <li>Multigrain (loaf) - <strong>£2.30</strong></li>
+            <li>Sourdough (loaf) - <strong>£2.60</strong></li>
+            <li>Rye (loaf) - <strong>£2.60</strong></li>
+            <li>Bagels (pack of 4) - <strong>£1.75</strong></li>
+            <li>Baguette - <strong>£1</strong></li>
+            <li>Bread rolls (pack of 4) - <strong>£1.60</strong></li>
+            <li>Brioche (loaf) - <strong>£2.50</strong></li>
+            <li>Brioche with chocolate chips (loaf) - <strong>£3</strong></li>
+            <li>Banana bread (loaf) - <strong>£2</strong></li>
+            <li>Pretzels (pack of 6) - <strong>£2.40</strong></li>
+            <li>Croissants (pack of 6) - <strong>£2.40</strong></li>
+          </ul>
+        </section>
+      
+        <section class="food-section">
+          <h4 class="product-description">Sandwhiches</h4>
+          <h5>When ordering, specify what bread you would like.</h5>
+          <ul style="list-style-type:disc">
+            <li>BLT - <strong>£2</strong></li>
+            <li>Ham & Cheese - <strong>£1.30</strong></li>
+            <li>Peanut butter & Jelly - <strong>£1.50</strong></li>
+            <li>Egg - <strong>£1.50</strong></li>
+            <li>Grilled cheese - <strong>£1.20</strong></li>
+            <li>Avocado - <strong>£1.60</strong></li>
+            <li>Tomato, cheese & lettuce - <strong>£1.30</strong></li>
+            <li>Bacon - <strong>£1.80</strong></li>
+            <li>Bacon, egg & cheese - <strong>£2.40</strong></li>
+            <li>BBQ pulled pork - <strong>£2.40</strong></li>
+          </ul>
+        </section>  
+      
+        <section class="food-section">
+          <h4 class="product-description">Muffins</h4>
+          <p class="product-info">Single: <strong>£1.40</strong> | Pack of 6: <strong>£7</strong></p>
+          <ul style="list-style-type:disc">
+            <li>Chocolate chip</li>
+            <li>Triple chocolate</li>
+            <li>White chocolate</li>
+            <li>Banana chocolate chip</li>
+            <li>Blueberry</li>
+            <li>Raspberry</li>
+          </ul>
+        </section>    
+      
+        <section class="food-section">
+          <h4 class="product-description">Brownies</h4>
+          <ul style="list-style-type:disc">
+          <h5>Basic (vegan available): </h5>
+          <p class="product-info">Single: <strong>£1.40</strong> | Pack of 6: <strong>£7</strong></p>
+            <li>Chocolate fudge<strong></strong></li>
+            <li>Blondies<strong></strong></li>
+            <li>Red Velvet<strong></strong></li>
+            
+          <h5>Specials:</h5>
+          <p class="product-info">Single: <strong>£1.80</strong> | Pack of 6: <strong>£9</strong></p>
+            <li>Salted caramel</li>
+            <li>Berry swirl</li>
+            <li>Kinder bueno</li>
+            <li>Brookie</li>
+            <li>Oreo</li>
+            <li>PB&J Blondies</li>
+            <li>Caramel</li>
+          </ul>
+        </section>
+      
+        <section class="food-section">
+          <h4 class="product-description">Cake</h4>
+          <p class="product-info">The stadard size is 9 inches.</p>
+          <ul style="list-style-type:disc">
+            <li>Chocolate - <strong>£40</strong></li>
+            <li>Red Velvet - <strong>£40</strong></li>
+            <li>Vanilla - <strong>£40</strong></li>
+            <li>Marble - <strong>£45</strong></li>
+            <li>Carrot - <strong>£45</strong></li>
+            <li>Lemon - <strong>£45</strong></li>
+            <li>Black forest - <strong></strong></li>
+            <li>Brownie - <strong>£40</strong></li>
+            <li>Brookie - <strong>£50</strong></li>
+          </ul>
+          <p class="cake-info">For any cakes (including persoanlised ones), please contact us.</p>
+        </section>   
+      
+        <section class="food-section">
+          <h4 class="product-description">Drinks</h4>
+  
+          <ul style="list-style-type:disc">
+            <li>Orange juice - <strong>£1.30</strong></li>
+            <li>Apple juice - <strong>£1.30</strong></li>
+            <li>Pineapple juice - <strong>£1.40</strong></li>
+            <li>Ice tea (Peach or Lemon) - <strong>£1.50</strong></li>
+            <li>Tea - <strong>£1.20</strong></li>
+            <li>Coffee - <strong>£1.20</strong></li>
+            <li>Hot Chocolate - <strong>£1.20</strong></li>
+            <li>Water - <strong>£1</strong></li>
+          </ul>
+        </section>
+      
+    <div>
+      
+  <!-- CLICK & COLLECT FORM ---- CLICK & COLLECT FORM ---- CLICK & COLLECT FORM ---- CLICK & COLLECT FORM ---- CLICK & COLLECT FORM ---->
+      <br>
+      <hr class="solid">    <!-- divider; solid line -->
+      <br>
+    <!-- when the form is submitted it leads to the link below -->
+    <form id="form" action="https://www.freecodecamp.com/email-submit">
+      
+      <h2>Click & Collect</h2>
+      
+      <!-- Note: id links to href in nav bar -->
+      <div class="form-group" id="click-&-collect">
+        <label for="name">Name: <i class="fa fa-user" aria-hidden="true"></i></label>
+        <input
+          type="text"
+          name="name"
+          id="name"
+          class="form-text-box"
+          placeholder="Enter your name"
+          required
+        />
+      </div>
+      
+      <br>
+      <div class="form-group">
+        <label for="email">Email: <i class="fa fa-envelope" aria-hidden="true"></i></label>
+        <input
+          type="email"
+          name="email"
+          id="email"
+          class="form-text-box"
+          placeholder="Enter your email"
+          required
+        />
+      </div>
+      
+      <br>
+      <div class="form-group">
+        <label for="phone-number">Phone number: </label>
+        <input
+          type="tel"
+          name="phone-number"
+          id="phone-number"
+          class="form-text-box"
+          placeholder="Enter your phone number"
+          required
+          maxlength="11"
+        />
+      </div>
+      
+      <div class="form-group">
+        <p>Your order:</p>
+        <textarea 
+                id="query" 
+                class="input-textarea" 
+                name="query" 
+                placeholder="format: 1 x White bread (loaf)"
+                >
+        </textarea>
+      </div>
+      
+      <br>
+      <div class="collection-time">
+        <label 
+            for="collection-time" 
+            id="collection-time">
+            What time will you collect your order?
+        </label>
+        <select 
+              name="collection-time" 
+              id="dropdown" 
+              required>
+          <option disabled selected value>Please select</option>
+          <option value="7:30">7:30</option>
+          <option value="7:45">7:45</option>
+          <option value="8:00">8:00</option>
+          <option value="8:15">8:15</option>
+          <option value="8:30">8:30</option>
+          <option value="8:45">8:45</option>
+          <option value="9:00">9:00</option>
+          <option value="9:15">9:15</option>
+          <option value="9:30">9:30</option>
+          <option value="9:45">9:45</option>
+          <option value="10:00">10:00</option>
+          <option value="10:15">10:15</option>
+          <option value="10:30">10:30</option>
+          <option value="10:45">10:45</option>
+          <option value="11:00">11:00</option>
+          <option value="11:15">11:15</option>
+          <option value="11:30">11:30</option>
+          <option value="11:45">11:45</option>
+          <option value="12:00">12:00</option>
+          <option value="12:15">12:15</option>
+          <option value="12:30">12:30</option>
+          <option value="12:45">12:45</option>
+          <option value="13:00">13:00</option>
+          <option value="13:15">13:15</option>
+          <option value="13:30">13:30</option>
+          <option value="13:45">13:45</option>
+          <option value="14:00">14:00</option>
+          <option value="14:15">14:15</option>
+          <option value="14:30">14:30</option>
+          <option value="14:45">14:45</option>
+          <option value="15:00">15:00</option>
+          <option value="15:15">15:15</option>
+          <option value="15:30">15:30</option>
+          <option value="15:45">15:45</option>
+          <option value="16:00">16:00</option>
+          <option value="16:15">16:15</option>
+          <option value="16:45">16:45</option>
+        </select>
+      </div>
+        
+      <!-- Submit button -->
+      <br>
+      <input id="submit" type="submit" value="Submit"/>
+    
+    </form>
+      
+
+      
+  <!-- OPENING HOURS ---- OPENING HOURS ---- OPENING HOURS ---- OPENING HOURS ---- OPENING HOURS ---- OPENING HOURS ---- OPENING HOURS ----> 
+    <br>
+    <hr class="solid">    <!-- divider; solid line -->
+    <br>
+    
+    <!-- Note: id links to href in nav bar -->
+    <section id="opening-hours">
+      <h2>Opening hours</h2>
+      <p class="address"><strong>Our address:</strong> 123 Fake company, London, United Kingdom</p>   
+      <p>Monday: 07:30 - 17:00</p>
+      <p>Tuesday: 07:30 - 17:00</p>
+      <p>Wednesday: 07:30 - 17:00</p>
+      <p>Thursday: 07:30 - 17:00</p>
+      <p>Friday: 07:30 - 17:00</p>
+      <p>Saturday: 10:00 - 15:00</p>
+      <p>Sunday: Closed</p>
+    </section>
+      
+    
+  <!-- CONTACT US FORM ---- CONTACT US FORM ---- CONTACT US FORM ---- CONTACT US FORM ---- CONTACT US FORM ---- CONTACT US FORM ----> 
+    <br>
+    <hr class="solid">    <!-- divider; solid line -->
+      
+    <br>
+    <!-- Note: id links to href in nav bar -->
+    <h2 id="contact-us">Contact Us</h2>
+      <p>Our phone number: 0208 1234567</p>
+      <p>Our email: ABsBakery@notreal.com</p>          
+
+    </div>
+  <!-- Footer ---- Footer ---- Footer ---- Footer ---- Footer ---- Footer ---- Footer ---- Footer ---- Footer ---- Footer ---- Footer ---->
+
+    <br>
+    <footer class="footer">
+      <br>
+      <p class="copyright">&#169; AB's Bakery Ltd</p>
+      <p class="copyright">Est 2021</p>
+      <p><a href="#">Privacy</a></p>
+      <p><a href="#">Terms</a></p>
+    </footer>  
+
+  </div>
+</html>
