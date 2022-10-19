@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>HTML Technical Documentation Page</title>
+    <!-- link to css page -->
+    <link rel="stylesheet" type="text/css" href="/Users/ivette/Library/Mobile Documents/iCloud~com~barebones~bbedit/Documents/Coding projects/Technical documentation page/Technical documentation page.css"/> <!-- to link css page in the html page -->
+  </head> 
+
+  <nav id="navbar">
+    
+    <header>HTML Documentation</header>
+      <ul>
+        <li><a class="nav-link" href="#Introduction">Introduction</a></li>
+        <li><a class="nav-link" href="#Tags">Tags</a></li>
+        <li><a class="nav-link" href="#Nesting_elements">Nesting elements</a></li>
+        <li><a class="nav-link" href="#Block_and_inline_elements">Block and inline elements</a></li>
+        <li><a class="nav-link" href="#Attributes">Attributes</a></li>
+        <li><a class="nav-link" href="#Boolean_attributes">Boolean attributes</a></li>
+        <li><a class="nav-link" href="#Anatomy_of_an_HTML_document">Anatomy of an HTML document</a></li>
+        <li><a class="nav-link" href="#Special_characters_in_HTML">Special characters in HTML</a></li>
+        <li><a class="nav-link" href="#HTML_comments">HTML comments</a></li>
+        <li><a class="nav-link" href="#Reference">Reference</a></li>
+      </ul>
+    
+  </nav>
+
+  <main id="main-doc">
+    
+      <section class="main-section" id="Introduction">
+        <header>Introduction</header>
+        <article>
+          <p>
+          HTML stands for Hypertext Markup Language, which tells the browser where the content belongs on the webpage. There are various elements you can use to structure your content and make it behave in a certain way.
+          </p>
+        </article>
+      
+      </section>
+    
+      <section class="main-section" id="Tags">
+        <header>Tags</header>
+        <article>
+          <p>Example:</p>
+          <p>
+            HTML code: <code>&lt;p&gt;This is a paragraph.&lt;/p&gt;</code>
+          </p>
+          <p>
+            Outcome: <code>This is a paragraph.</code>
+        </p>
+        <p>
+          There are two types of tags:
+          <ul>
+            <li>opening tag: which is used at the start of paragraph.
+            <li>closing tag: This is used at the end of the content and includes a forward slash before the name of the element.</li> 
+          </ul>
+        </p>
+        <p>Format: Opening tag, content then closing tag.</p>
+        <p>
+          Note: Not every element has a closing tag. You may encounter an empty (or void) element. Single tags are generaly used for embedding items in the document, such as images.
+        </p>
+      </article>
+    </section>
+
+    <br>
+
+    <section class="main-section" id="Nesting_elements">
+      <header>Nesting elements</header>
+      <article>
+        <p>
+          A nested element (also referred to as a child element) is when a HTML element contains additional elements, such as attributes, tags etc.
+        </p>
+        <p>For example: 
+        <p>
+          HTML code: <code>My dog is &lt;strong&gt;excited&lt;/strong&gt; to go to the park today.</code>
+        <p>
+        <p>
+          Outcome: <code>My dog is <strong>excited</strong> to go to the park today.</code>
+        </p>
+        <p>
+          There are two uses of bold:
+          <ul>
+            <li>&lt;strong&gt; & &lt;/strong&gt; = to show importance; seriousness; urgency e.g. section headings</li>
+            <li>&lt;bold&gt; & &lt;/bold&gt; = its main purpose is to jump out to the reader, it is generic; neutral; has no meaning or alternative voice.</li>
+          </ul>
+        </p>
+        <p>There are two uses of italics:
+          <ul>
+            <li>&lt;em&gt; & &lt;/em&gt; = emphasis italics (verbally emphasised)</li>
+            <li>&lt;i&gt; & &lt;/i&gt; = visual-only italics (generic; neutral; it has no meaning)</li>
+          <ul>
+        </p>
+      </article>
+    </section>
+    
+    <br>
+
+    <section class="main-section" id="Block_and_inline_elements">
+      <header>Block and inline elements</header>
+      <article>
+        <p>Elements can be sorted into block-level and inline elements.</p>
+        <ul>
+          <li>
+            Block elements creates a new block on a page and wiill take up the maximum width available. The browser will also add a margin (space) before and after the element. Block elements cannot be nested within an inline element, but can be nested in another block element.
+          </li>
+          <p>Some common block elements would be &lt;p&gt; and &lt;div&gt;.</p>
+          <br>
+          <li>Inline elements are used within block elements (so they do not begin a new line on the document) and only takes up the necessary width of a page.</li>
+          <br>Some examples are &lt;a&gt; (for creating hyperlinks) and &lt;i&gt;.
+        </ul>
+        <p>E.g.</p>
+        <p>
+          HTML code:<code>&lt;p&gt;A&lt;/p&gt;&lt;p&gt;B&lt;/p&gt;&lt;p&gt;C&lt;/p&gt;
+          &lt;i&gt;D&lt;/i&gt;&lt;i&gt;E&lt;/i&gt;&lt;i&gt;F&lt;/i&gt;</code>
+        </p>
+        <p>Outcome:</p>
+        <code><p>A</p><p>B</p><p>C<p>
+        <i>D</i><i>E</i><i>F</i></code>
+        <p>
+          First we have <code>&lt;p&gt;</code> which is a block element, so each letter begins on a new line with spacing between each letter. On the other hand, <code>&lt;i&gt;</code> is an inline element, so the first few letters are on the same line which has no spaces between them.</code>
+        </p>
+      <article>
+    </section>
+      
+    <br>
+
+    <section class="main-section" id="Attributes">
+      <header>Attributes</header>
+      <article>
+        <p>
+          Attributes have extra information about an element that is not visible on the displayed page. Some attributes work on several elements and some attributes work on certain elements.
+        </p>
+        <p>Here are a couple of examples:</p>
+        <ol>
+          <li>Class attribute. These target any element with that class in CSS or JavaScript.
+            <p><code>&lt;p class="Intro"&gt; This is the introduction.&lt;/p&gt;</code></p>
+          </li>
+          <li>ID attributes. These target specific elements with that ID in CSS or JavaScript. They are similar to class attributes, but can only be used once in an entire HTML page. The unique names are useful for JS and links.
+            <p><code>&lt;p class="Intro" id="Article-Intro"&gt; This is the introduction.&lt;/p&gt;</code>
+          </li>
+        </ol>
+        <p>Note that if an element has two or more attributes they need to be spereated by a space.</p>   
+      <article> 
+    </section>
+      
+    <br>
+
+    <section class="main-section" id="Boolean_attributes">
+      <header>Boolean attributes</header>
+      <article>
+        <p>
+          Boolean attributes are attributes without values. As the values 'true' and 'false' are not permitted on boolean attributes, the inclusion of a boolean attributue indicates that the value is true and the absence would mean a false value. The 'value' that they have is the same as the attrribute name or an empty string. For example: 
+        </p>
+        <p>
+          <code>&lt;input type="checkbox" checked="checked"&gt;</code>
+        <p>
+        <p>You can also write it the following way:</p>
+        <p>
+          <code>&lt;input type="checkbox" checked=""&gt;</code>
+        </p>
+        <p>
+          It is best practise to include the speechmarks for the value to avoid confusion and mistakes with the markup and improve the readability of your code.
+        </p>
+      <article>
+    </section>
+      
+    <br>
+
+        
+    <section class="main-section" id="Anatomy_of_an_HTML_document">
+      <header>Anatomy of an HTML document</header>
+      <article>
+        <p>There are several key parts that every webpage must contain:</p>
+        <pre class="anatomy_HTML">
+          &lt;!DOCTYPE html&gt;
+          &lt;html lang="en-US" dir="ltr"&gt;
+            &lt;head&gt;
+              &lt;meta charset="utf-8"&gt;
+              &lt;meta name="viewport" content="width=device-width"&gt;
+              &lt;title&gt;Title Name&lt;/title&gt;
+            &lt;/head&gt;
+            &lt;body&gt;
+              &lt;h1&gt;This is a headline.&lt;/h1&gt;
+              &lt;p&gt;1st paragraph.&lt;/p&gt;
+              &lt;p&gt;Usually there's quite a lot here.&lt;/p&gt;
+            &lt;/body&gt;
+          &lt;/html&gt;
+        </pre>
+
+      <ol>
+      <br>
+          <li>
+            <code>&lt;!DOCTYPE html&gt;</code>The DOCTYPE html file must begin with a docutype which declares which era this HTML file is from and shows what rules should be followed, this is included so that the HTML works.
+          </li>
+          <li>
+            <code>&lt;html&gt;&lt;/html&gt;</code>The HTML element. This is the root element where all other elements will be. The lang attribute refers to the language of the document and the dir attribute refers to the direction of the content written, i.e. for english it would be left to right (ltr) and in other langaues such as arabic it would be right to left(rtl).
+          </li>
+          <li>
+            <code>&lt;head&gt;&lt;/head&gt;</code>The head element. This contains all the information the browser needs to know. i.e. the metadata, such as page descriptions which is shown in search results and CSS to style the page's content. This information won't be visible to the users.
+          </li>
+          <li>
+            <code>&lt;meta charset="utf-8"&gt;</code>The meta element. This tells the browser the information about the data in an HTML document e.g. the author, page description and viewport settings (the viewport is the area of the page that the user can see). They are always within the &lt;head&gt; element. The charset attribute refers to the character encoding in the HTML webpage.
+          </li>
+          <li>
+            <code>&lt;title&gt;&lt;/title&gt;</code>The title element. This creates the page's title which is visible in the browser tab the webpage is in, as well as the name of the page when it is bookmarked.
+          </li>
+          <li>
+            <code>&lt;body&gt;&lt;/body&gt;</code>The body element. This includes all the content that appears in the HTML document i.e. text, videos, images, audio, games etc.
+          </li>
+      <article>
+    </section>
+        
+    <br>
+        
+    <section class="main-section" id="Special_characters_in_HTML">
+      <header>Special characters in HTML</header>
+      <article>
+        <p>The special characters in HTML are < , > , " , ' and &. In order to refer to them in your code you must use their character reference, which begins with an ampersand (&) and ends with a semicolon (;).</p>
+        <div class ="table">
+          <table> <!-- defines a table -->
+            <thead> <!-- groups the header content in a table-->
+              <tr>  <!-- tr = table row-->
+                <th>Character</th>  <!-- th = table header -->
+                <th>Character reference equivalent</th>
+              </tr>
+            </thead>
+            <tbody> <!-- groups body content in a table -->
+              <tr>
+                <td>&lt;</td> <!-- td = table data -->
+                <td><code>&amp;lt;</code>
+              </tr>
+              <tr>
+                <td>&gt;</td>
+                <td><code>&amp;gt;</code></td>
+              </tr>
+              <tr>
+                <td>"</td>
+                <td><code>&amp;quot;</code></td>
+              </tr>
+              <tr>
+                <td>'</td>
+                <td><code>&amp;apos;</code></td>
+              </tr>
+            <tr>
+              <td>&amp;</td>
+              <td><code>&amp;amp;</code></td>
+            </tr>
+            </tbody>
+          </table>
+        </div>
+        <!-- when you want your cells to be headers, use <th> instead of <td> -->
+      <article>
+    </section>
+        
+    <br>
+
+    <section class="main-section" id="HTML_comments">
+      <header>HTML comments</header>
+      <article>
+        <p>
+          To include comments in your code, wrap the content with the special markers: <code>&lt;!--</code> and <code>--&gt;</code>
+        </p>
+        <p>
+          For example:
+        </p>
+        <p>
+          <code>&lt;p&gt; This is not a comment.&lt;/p&gt;</code>
+        </p>
+        <p>
+          <code>&lt;!-- &lt;p&gt;This is!&lt;/p&gt; --&gt;</code>
+        </p>
+        <p>
+          Only the first paragraph will be visible to the user.
+        </p>
+      <article>
+    </section>   
+        
+    <section class="main-section" id="Reference">
+      <header>Reference</header>
+      <article>
+        <p>For more information visit the official
+          <a
+            id="MDN_documentation"
+            href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Getting_started"
+            target="_blank">MDN
+          </a>documentation.
+        </p>
+      </article>
+    </section>   
+    
+  </main>
+</html>
