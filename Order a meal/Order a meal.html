@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<head>
+	<html lang="en">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- required; shown in page tab or browser's title bar -->
+	<title>Your order</title>
+</head>
+	
+<div class="container"> 
+	
+  <header class="header">
+		<h1 id="title">Your order!</h1>
+	</header>
+  
+  <!--FORM-->
+  
+	<form id="survey-form">
+    
+		<div class="form-group">
+    	<label for="name" id="name-label">Name</label>
+    	<input
+        type="text"
+        name="name"
+        id="name"
+				class="form-box-control"
+        placeholder="Enter your name"
+        required
+    	/>
+		</div>
+    
+		<div class="form-group">
+    	<label for="email" id="email-label">Email</label>
+    	<input
+        type="email"
+        name="email"
+        id="email"
+				class="form-box-control"
+        placeholder="Enter your email"
+        required
+    	/>
+		</div>
+
+    <div class="form-group" id="meal-price">
+      <p>All meal combos are £20.</p>
+    </div>
+   
+		<div class="form-group">
+			<p>Main</p>
+    	<label>
+      	<input
+						 type="radio" 
+						 name="main-meal" 
+						 value="steak" 
+						 class="input-checkbox"
+						 />Steak
+    	</label>
+			<label>
+      	<input 
+						 type="radio" 
+						 name="main-meal"  
+						 value="lobster" 
+						 class="input-checkbox"
+						 />Lobster
+    	</label>
+			<label>
+      	<input 
+						 type="radio" 
+						 name="main-meal"  
+						 value="Cheeseburger" 
+						 class="input-checkbox"
+						 />Cheeseburger
+    	</label>
+      <label>
+      	<input 
+						 type="radio" 
+						 name="main-meal"  
+						 value="bbq wings" 
+						 class="input-checkbox"
+						 />BBQ wings
+    	</label>
+      <label>
+      	<input 
+						 type="radio" 
+						 name="main-meal"  
+						 value="lamb" 
+						 class="input-checkbox"
+						 />Lamb
+    	</label>
+      <h5>All mains are accompanied with a portion of salad.</h5>
+		</div>
+		
+		<div class="form-group">
+			<p>Sides</p>
+    	<label>
+      	<input
+						 type="radio" 
+						 name="sides" 
+						 value="chips" 
+						 class="input-checkbox"
+						 />Chips
+    	</label>
+    	<label>
+      	<input 
+						 type="radio" 
+						 name="sides"  
+						 value="peri-salted chips" 
+						 class="input-checkbox"
+						 />Peri-salted Chips
+    	</label>
+			<label>
+      	<input 
+						 type="radio" 
+						 name="sides"  
+						 value="mashed potatoes" 
+						 class="input-checkbox"
+						 />Mashed Potatoes
+    	</label>
+      <label>
+      	<input 
+						 type="radio" 
+						 name="sides" 
+						 value="mac and cheese" 
+						 class="input-checkbox"
+						 />Mac and Cheese
+    	</label>
+      <label>
+      	<input 
+						 type="radio" 
+						 name="sides" 
+						 value="fried rice" 
+						 class="input-checkbox"
+						 />Fried rice
+    	</label>
+			<label>
+      	<input 
+						 type="radio" 
+						 name="sides"  
+						 value="corn on the cob" 
+						 class="input-checkbox"
+						 />Corn on the cob
+    	</label>
+		</div>
+    
+    <div class="form-group">
+			<p>Dessert</p>
+    	<label>
+      	<input 
+						 type="radio" 
+						 name="dessert" 
+						 value="chocolate cake" 
+						 class="input-checkbox"
+						 />Chocolate cake
+    	</label>
+			<label>
+      	<input 
+						 type="radio" 
+						 name="dessert"  
+						 value="cheesecake" 
+						 class="input-checkbox"
+						 />Cheesecake
+    	</label>
+			<label>
+      	<input 
+						 type="radio" 
+						 name="dessert"  
+						 value="lemon cake" 
+						 class="input-checkbox"
+						 />Lemon cake
+    	</label>
+      <label>
+      	<input 
+						 type="radio" 
+						 name="dessert"  
+						 value="red velvet cake" 
+						 class="input-checkbox"
+						 />Red velvet cake
+    	</label>
+      <label>
+      	<input 
+						 type="radio" 
+						 name="dessert"  
+						 value="raspberry pie" 
+						 class="input-checkbox"
+						 />Raspberry pie
+    	</label>
+		</div>    
+    
+    <div class="form-group">
+			<p>Drinks</p>
+    	<label>
+      	<input 
+						 type="radio" 
+						 name="drink" 
+						 value="500ml water" 
+						 class="input-checkbox"
+						 />500ml Water
+    	</label>
+			<label>
+      	<input 
+						 type="radio" 
+						 name="drink"  
+						 value="orange juice" 
+						 class="input-checkbox"
+						 />Orange Juice
+    	</label>
+			<label>
+      	<input 
+						 type="radio" 
+						 name="drink" 
+						 value="pineapple juice" 
+						 class="input-checkbox"
+						 />Pineapple Juice
+    	</label>
+      <label>
+      	<input 
+						 type="radio" 
+						 name="drink"  
+						 value="mirinda strawberry" 
+						 class="input-checkbox"
+						 />Mirinda Strawberry
+    	</label>
+      <label>
+      	<input 
+						 type="radio" 
+						 name="drink"  
+						 value="mirinda orange" 
+						 class="input-checkbox"
+						 />Mirinda Orange
+    	</label>
+      <label>
+      	<input 
+						 type="radio" 
+						 name="drink"  
+						 value="Coca-Cola" 
+						 class="input-checkbox"
+						 />Coca-Cola
+    	</label>
+      <label>
+      	<input 
+						 type="radio" 
+						 name="drink"  
+						 value="sprite" 
+						 class="input-checkbox"
+						 />Sprite
+    	</label>
+      <label>
+      	<input 
+						 type="radio" 
+						 name="drink"  
+						 value="slushie strawberry" 
+						 class="input-checkbox"
+						 />Slushie Strawberry
+    	</label>
+      <label>
+      	<input 
+						 type="radio" 
+						 name="drink"  
+						 value="slushie blueberry" 
+						 class="input-checkbox"
+						 />Slushie Blueberry
+    	</label>
+      <label>
+      	<input 
+						 type="radio" 
+						 name="drink"  
+						 value="slushie mix" 
+						 class="input-checkbox"
+						 />Slushie Mix
+    	</label>
+		</div>
+    
+		
+    <div class="form-group" id="checkboxgroup">
+			<p>Sauces (Maximum of 2)</p>
+			<label>
+				<input 
+						 type="checkbox" 
+						 name="sauces" 
+						 value="ketchup"
+						 class="input-checkbox"
+						 >Ketchup
+			</label>
+			<label>
+				<input 
+						 type="checkbox" 
+						 name="sauces" 
+						 value="mayo"
+						 class="input-checkbox"
+						 >Mayo
+			</label>
+			<label>
+				<input 
+						 type="checkbox" 
+						 name="sauces" 
+						 value="garlic mayo"
+						 class="input-checkbox"
+						 >Garlic Mayo
+			</label>
+			<label>
+				<input 
+						 type="checkbox" 
+						 name="sauces" 
+						 value="chipotle"
+						 class="input-checkbox"
+						 >Chipotle
+			</label>
+			<label>
+				<input 
+						 type="checkbox" 
+						 name="sauces"  
+						 value="spicy sauce"
+						 class="input-checkbox"
+						 >Spicy Sauce
+			</label>
+			<label>
+				<input 
+						 type="checkbox" 
+						 name="sauces"
+						 value="bbq"
+						 class="input-checkbox"
+						 >BBQ
+			</label>
+		</div>
+	
+		<div class="form-group">
+			<button
+            onclick="confirmation()"
+						type="submit" 
+						id="submit" 
+						class="submit-button"
+            disabled
+            >Confirm your order
+			</button>
+		</div>
+  </form>
+</div>
+</html>
